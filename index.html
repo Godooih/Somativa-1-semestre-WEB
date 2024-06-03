@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
+
+    <link rel="stylesheet" href="styles.css">
+    <title>Dashboard</title>
+</head>
+
+<body>
+    <div class="container">
+        <div class="topbar">
+            <div class="logo">
+                <h2>
+                    <img id="senai" src="img/Senai.png" alt="">
+                </h2>
+            </div>
+            <div class="search">
+                <h1>VIP * Visão Integrada de Produção</h1>
+                
+            </div>
+            <i class="fas fa-bell"></i>
+            <div class="user">
+                <img src="img/HQCT LOGO-Photoroom.png" alt="">
+            </div>
+        </div>
+        <div class="sidebar">
+            <ul>
+                <li>
+                    <a href="index.html">
+                        <i class="fas fa-industry"></i>
+                        <div>Painel Principal</div>
+                    </a>
+                </li>
+                <li>
+                    <a href="produção.html">
+                        <i class="fas fa-hammer"></i>
+                        <div>Produção</div>
+                    </a>
+                </li>
+                <li>
+                    <a href="inventario.html">
+                        <i class="fas fa-table"></i>
+                        <div>Inventario</div>
+                    </a>
+                </li>
+            </ul>
+        </div>
+        <div class="main">
+            <div id="titulo_das_tabelas">
+                <h2>Informações Uteis</h2>
+                </div>
+            <div class="cards">
+                
+                <div class="card">
+                    <div class="card-content">
+                        <div class="number">Critico</div>
+                        <div class="card-name">Vidro</div>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-content">
+                        <div class="number">89</div>
+                        <div class="card-name">Quantidade produzida</div>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-content">
+                        <div class="number">89,0%</div>
+                        <div class="card-name">Porcentagem da meta concluida</div>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-content">
+                        <div class="number">R$ 15.478,90</div>
+                        <div class="card-name">Receita da produção</div>
+                    </div>
+                </div>
+            </div>
+            <div class="charts">
+                <div class="chart">
+                    <h2>Quantidade de peças produiza por dia</h2>
+                    <div>
+                        <canvas id="lineChart"></canvas>
+                    </div>
+                </div>
+                <div class="chart doughnut-chart">
+                    <h2>Eficiencia dos maquinarios </h2>
+                    <div>
+                        <canvas id="doughnut"></canvas>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="chart1.js"></script>
+    <script src="chart2.js"></script>
+</body>
+
+</html>
